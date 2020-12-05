@@ -1,0 +1,19 @@
+{
+  "manifest_version" : 2,
+  "name": "뉴 페이지",
+  "version": "1.0",
+  "description": "뉴 페이지",
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "newPage"
+  },
+  "chrome_url_overrides" :{
+    "newtab": "new.html"
+  },
+  "background":{
+    "scripts":["background.js"],
+    "persistent": false
+  }
+}
